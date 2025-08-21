@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.3 on win32)" generated="2025-08-21T10:31:36.018092" rpa="true" schemaversion="5">
+<suite id="s1" name="IQS" source="F:\CURSO FEST -T2M\IQS">
+<suite id="s1-s1" name="Operadores Matematicos" source="F:\CURSO FEST -T2M\IQS\operadores_matematicos.robot">
+<test id="s1-s1-t1" name="Exemplo Operadores Matematicos 01:" line="7">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\nSoma 10 + 9: ${10 + 9}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-21T10:31:36.061072" elapsed="0.000732"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\nSubtração 20 - 5: ${20 - 5}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-21T10:31:36.062047" elapsed="0.000628"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\nMultiplicacao 4 * 5: ${4 * 5}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-21T10:31:36.062901" elapsed="0.000565"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\nDivisao 20 / 5: ${20 / 5}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-21T10:31:36.063641" elapsed="0.000536"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\nResto da divisao 10 % 3: ${10 % 3}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-21T10:31:36.064330" elapsed="0.000523"/>
+</kw>
+<status status="PASS" start="2025-08-21T10:31:36.059176" elapsed="0.005859"/>
+</test>
+<status status="PASS" start="2025-08-21T10:31:36.056324" elapsed="0.011884"/>
+</suite>
+<status status="PASS" start="2025-08-21T10:31:36.022174" elapsed="0.050669"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="IQS" id="s1" pass="1" fail="0" skip="0">IQS</stat>
+<stat name="Operadores Matematicos" id="s1-s1" pass="1" fail="0" skip="0">IQS.Operadores Matematicos</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
