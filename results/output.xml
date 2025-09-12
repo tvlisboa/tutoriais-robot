@@ -1,56 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-09-12T16:09:03.588716" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-09-12T16:20:42.175116" rpa="false" schemaversion="5">
 <suite id="s1" name="IQS" source="F:\CURSO FEST -T2M\IQS">
 <suite id="s1-s1" name="Iqs" source="F:\CURSO FEST -T2M\IQS\iqs">
 <suite id="s1-s1-s1" name="Tutorial Robot" source="F:\CURSO FEST -T2M\IQS\iqs\Tutorial Robot">
 <suite id="s1-s1-s1-s1" name="Estrutura" source="F:\CURSO FEST -T2M\IQS\iqs\Tutorial Robot\estrutura.robot">
-<test id="s1-s1-s1-s1-t1" name="Cenario 1: Teste para abrir navegador no site da globo" line="20">
+<test id="s1-s1-s1-s1-t1" name="Cenario 1: Teste para abrir site da globo" line="31">
+<kw name="abrir site da globo">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-12T16:09:03.810233" level="INFO">Opening browser 'chrome' to base url 'https://www.globo.com/'.</msg>
+<msg time="2025-09-12T16:20:42.430971" level="INFO">Opening browser 'chrome' to base url 'https://www.globo.com/'.</msg>
 <arg>https://www.globo.com/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-12T16:09:03.809931" elapsed="3.574457"/>
+<status status="PASS" start="2025-09-12T16:20:42.430719" elapsed="4.108074"/>
 </kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-12T16:20:46.539027" elapsed="0.141715"/>
+</kw>
+<status status="PASS" start="2025-09-12T16:20:42.430082" elapsed="4.250941"/>
+</kw>
+<kw name="fechar navegador">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-09-12T16:09:22.385452" level="INFO">Slept 15 seconds.</msg>
-<arg>15s</arg>
+<msg time="2025-09-12T16:20:51.682446" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-09-12T16:09:07.384893" elapsed="15.000907"/>
+<status status="PASS" start="2025-09-12T16:20:46.681890" elapsed="5.000900"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-09-12T16:09:22.386116" elapsed="2.156620"/>
+<status status="PASS" start="2025-09-12T16:20:51.682967" elapsed="2.160883"/>
 </kw>
-<status status="PASS" start="2025-09-12T16:09:03.807666" elapsed="20.735431"/>
+<status status="PASS" start="2025-09-12T16:20:46.681435" elapsed="7.162612"/>
+</kw>
+<status status="PASS" start="2025-09-12T16:20:42.427909" elapsed="11.416423"/>
 </test>
-<test id="s1-s1-s1-s1-t2" name="Cenario 2: Teste para abrir o navegador no site da g1" line="25">
+<test id="s1-s1-s1-s1-t2" name="Cenario 2: Teste para abrir site da g1" line="35">
+<kw name="abrir site do g1">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-12T16:09:24.547899" level="INFO">Opening browser 'chrome' to base url 'https://g1.globo.com/'.</msg>
+<msg time="2025-09-12T16:20:53.849907" level="INFO">Opening browser 'chrome' to base url 'https://g1.globo.com/'.</msg>
 <arg>https://g1.globo.com/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-12T16:09:24.547665" elapsed="3.104870"/>
+<status status="PASS" start="2025-09-12T16:20:53.849697" elapsed="3.075212"/>
 </kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-12T16:20:56.925197" elapsed="0.046763"/>
+</kw>
+<status status="PASS" start="2025-09-12T16:20:53.849418" elapsed="3.122728"/>
+</kw>
+<kw name="fechar navegador">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-09-12T16:09:42.653540" level="INFO">Slept 15 seconds.</msg>
-<arg>15s</arg>
+<msg time="2025-09-12T16:21:01.973693" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-09-12T16:09:27.652993" elapsed="15.000915"/>
+<status status="PASS" start="2025-09-12T16:20:56.972831" elapsed="5.001219"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-09-12T16:09:42.654230" elapsed="2.127340"/>
+<status status="PASS" start="2025-09-12T16:21:01.974225" elapsed="2.138338"/>
 </kw>
-<status status="PASS" start="2025-09-12T16:09:24.545946" elapsed="20.236000"/>
+<status status="PASS" start="2025-09-12T16:20:56.972470" elapsed="7.140277"/>
+</kw>
+<status status="PASS" start="2025-09-12T16:20:53.847390" elapsed="10.265661"/>
 </test>
-<status status="PASS" start="2025-09-12T16:09:03.627022" elapsed="41.157884"/>
+<status status="PASS" start="2025-09-12T16:20:42.215156" elapsed="21.900769"/>
 </suite>
-<status status="PASS" start="2025-09-12T16:09:03.624741" elapsed="41.162215"/>
+<status status="PASS" start="2025-09-12T16:20:42.211933" elapsed="21.906118"/>
 </suite>
-<status status="PASS" start="2025-09-12T16:09:03.621560" elapsed="41.167120"/>
+<status status="PASS" start="2025-09-12T16:20:42.207264" elapsed="21.915607"/>
 </suite>
-<status status="PASS" start="2025-09-12T16:09:03.592304" elapsed="41.200489"/>
+<status status="PASS" start="2025-09-12T16:20:42.178682" elapsed="21.945924"/>
 </suite>
 <statistics>
 <total>
