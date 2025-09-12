@@ -1,105 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-08-27T12:36:40.222948" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-09-12T16:09:03.588716" rpa="false" schemaversion="5">
 <suite id="s1" name="IQS" source="F:\CURSO FEST -T2M\IQS">
 <suite id="s1-s1" name="Iqs" source="F:\CURSO FEST -T2M\IQS\iqs">
 <suite id="s1-s1-s1" name="Tutorial Robot" source="F:\CURSO FEST -T2M\IQS\iqs\Tutorial Robot">
-<suite id="s1-s1-s1-s1" name="Bdd1" source="F:\CURSO FEST -T2M\IQS\iqs\Tutorial Robot\bdd1.robot">
-<test id="s1-s1-s1-s1-t1" name="TC1: Executar o video no youtube." line="46">
-<kw name="Dado que o usuario acesse o site do youtube">
+<suite id="s1-s1-s1-s1" name="Estrutura" source="F:\CURSO FEST -T2M\IQS\iqs\Tutorial Robot\estrutura.robot">
+<test id="s1-s1-s1-s1-t1" name="Cenario 1: Teste para abrir navegador no site da globo" line="20">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-08-27T12:36:40.464559" level="INFO">Opening browser 'CHROME' to base url 'https://www.youtube.com/'.</msg>
-<arg>${URL}</arg>
-<arg>${BROWSER}</arg>
+<msg time="2025-09-12T16:09:03.810233" level="INFO">Opening browser 'chrome' to base url 'https://www.globo.com/'.</msg>
+<arg>https://www.globo.com/</arg>
+<arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-08-27T12:36:40.464287" elapsed="2.314260"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-08-27T12:36:42.778872" elapsed="0.160774"/>
-</kw>
-<status status="PASS" start="2025-08-27T12:36:40.463727" elapsed="2.476175"/>
-</kw>
-<kw name="Quando digitar em pequisar">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-08-27T12:36:42.941453" level="INFO">Typing text 'Billie Eilish - BIRDS OF A FEATHER' into text field '//input[@class="ytSearchboxComponentInput yt-searchbox-input title"]'.</msg>
-<arg>${INPUT_PEQUISAR}</arg>
-<arg>${NOME_MUSICA}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-27T12:36:42.940849" elapsed="0.218309"/>
-</kw>
-<status status="PASS" start="2025-08-27T12:36:42.940345" elapsed="0.218994"/>
-</kw>
-<kw name="E clicar no botao pequisar">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-08-27T12:36:43.160313" level="INFO">Clicking element '//button[@class="ytSearchboxComponentSearchButton"]'.</msg>
-<arg>${BUTTON_PESQUISAR}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-27T12:36:43.160042" elapsed="0.059688"/>
-</kw>
-<status status="PASS" start="2025-08-27T12:36:43.159650" elapsed="0.060262"/>
-</kw>
-<kw name="E clicar na primeira opcao da lista">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${FIRST_VIDEO}</arg>
-<arg>15</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-08-27T12:36:43.220688" elapsed="1.268316"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-08-27T12:36:44.489598" level="INFO">Clicking element '(//yt-formatted-string[@class="style-scope ytd-video-renderer"])[1]'.</msg>
-<arg>${FIRST_VIDEO}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-27T12:36:44.489224" elapsed="0.099978"/>
-</kw>
-<status status="PASS" start="2025-08-27T12:36:43.220261" elapsed="1.369117"/>
-</kw>
-<kw name="Entao o video é executado">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${PROVA}</arg>
-<arg>15</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-08-27T12:36:44.590190" elapsed="1.450918"/>
-</kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-08-27T12:36:46.053607" level="INFO">Element '//yt-formatted-string[@id="owner-sub-count"]' is displayed.</msg>
-<arg>${PROVA}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-08-27T12:36:46.041359" elapsed="0.012525"/>
+<status status="PASS" start="2025-09-12T16:09:03.809931" elapsed="3.574457"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<arg>30S</arg>
+<msg time="2025-09-12T16:09:22.385452" level="INFO">Slept 15 seconds.</msg>
+<arg>15s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="FAIL" start="2025-08-27T12:36:46.054053" elapsed="14.258681">Execution terminated by signal</status>
+<status status="PASS" start="2025-09-12T16:09:07.384893" elapsed="15.000907"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2025-08-27T12:37:00.312936" elapsed="0.000141"/>
+<status status="PASS" start="2025-09-12T16:09:22.386116" elapsed="2.156620"/>
 </kw>
-<status status="FAIL" start="2025-08-27T12:36:44.589745" elapsed="15.723459">Execution terminated by signal</status>
-</kw>
-<tag>regressivo</tag>
-<status status="FAIL" start="2025-08-27T12:36:40.461796" elapsed="19.851651">Execution terminated by signal</status>
+<status status="PASS" start="2025-09-12T16:09:03.807666" elapsed="20.735431"/>
 </test>
-<status status="FAIL" start="2025-08-27T12:36:40.253998" elapsed="20.071880"/>
+<test id="s1-s1-s1-s1-t2" name="Cenario 2: Teste para abrir o navegador no site da g1" line="25">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-12T16:09:24.547899" level="INFO">Opening browser 'chrome' to base url 'https://g1.globo.com/'.</msg>
+<arg>https://g1.globo.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-12T16:09:24.547665" elapsed="3.104870"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-12T16:09:42.653540" level="INFO">Slept 15 seconds.</msg>
+<arg>15s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-12T16:09:27.652993" elapsed="15.000915"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-09-12T16:09:42.654230" elapsed="2.127340"/>
+</kw>
+<status status="PASS" start="2025-09-12T16:09:24.545946" elapsed="20.236000"/>
+</test>
+<status status="PASS" start="2025-09-12T16:09:03.627022" elapsed="41.157884"/>
 </suite>
-<status status="FAIL" start="2025-08-27T12:36:40.251956" elapsed="20.077705"/>
+<status status="PASS" start="2025-09-12T16:09:03.624741" elapsed="41.162215"/>
 </suite>
-<status status="FAIL" start="2025-08-27T12:36:40.249592" elapsed="20.082422"/>
+<status status="PASS" start="2025-09-12T16:09:03.621560" elapsed="41.167120"/>
 </suite>
-<status status="FAIL" start="2025-08-27T12:36:40.226471" elapsed="20.107525"/>
+<status status="PASS" start="2025-09-12T16:09:03.592304" elapsed="41.200489"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1" skip="0">regressivo</stat>
 </tag>
 <suite>
-<stat name="IQS" id="s1" pass="0" fail="1" skip="0">IQS</stat>
-<stat name="Iqs" id="s1-s1" pass="0" fail="1" skip="0">IQS.Iqs</stat>
-<stat name="Tutorial Robot" id="s1-s1-s1" pass="0" fail="1" skip="0">IQS.Iqs.Tutorial Robot</stat>
-<stat name="Bdd1" id="s1-s1-s1-s1" pass="0" fail="1" skip="0">IQS.Iqs.Tutorial Robot.Bdd1</stat>
+<stat name="IQS" id="s1" pass="2" fail="0" skip="0">IQS</stat>
+<stat name="Iqs" id="s1-s1" pass="2" fail="0" skip="0">IQS.Iqs</stat>
+<stat name="Tutorial Robot" id="s1-s1-s1" pass="2" fail="0" skip="0">IQS.Iqs.Tutorial Robot</stat>
+<stat name="Estrutura" id="s1-s1-s1-s1" pass="2" fail="0" skip="0">IQS.Iqs.Tutorial Robot.Estrutura</stat>
 </suite>
 </statistics>
 <errors>
