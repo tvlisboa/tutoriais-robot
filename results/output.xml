@@ -1,36 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-09-15T17:19:02.795917" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-09-15T18:37:10.610590" rpa="false" schemaversion="5">
 <suite id="s1" name="IQS" source="F:\CURSO FEST -T2M\IQS">
 <suite id="s1-s1" name="Iqs" source="F:\CURSO FEST -T2M\IQS\iqs">
 <suite id="s1-s1-s1" name="Tutorial Robot" source="F:\CURSO FEST -T2M\IQS\iqs\Tutorial Robot">
-<suite id="s1-s1-s1-s1" name="Estrutura2" source="F:\CURSO FEST -T2M\IQS\iqs\Tutorial Robot\estrutura2.robot">
-<test id="s1-s1-s1-s1-t1" name="Cenario 1: Teste para abrir navegador" line="16">
+<suite id="s1-s1-s1-s1" name="Forms2" source="F:\CURSO FEST -T2M\IQS\iqs\Tutorial Robot\forms2.robot">
+<test id="s1-s1-s1-s1-t1" name="Cenario 1: Preencher o formulario" line="55">
+<kw name="abrir o navegador e acessar o site">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-15T17:19:03.067986" level="INFO">Opening browser 'chrome' to base url 'https://www.nike.com/'.</msg>
-<arg>https://www.nike.com/</arg>
+<msg time="2025-09-15T18:37:10.954830" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/automation-practice-form'.</msg>
+<arg>https://demoqa.com/automation-practice-form</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-15T17:19:03.067686" elapsed="4.495011"/>
+<status status="PASS" start="2025-09-15T18:37:10.954496" elapsed="10.419496"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-15T18:37:21.374307" elapsed="0.029615"/>
+</kw>
+<status status="PASS" start="2025-09-15T18:37:10.953832" elapsed="10.450351"/>
+</kw>
+<kw name="preencher os campos">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-15T18:37:21.405624" level="INFO">Typing text 'THIAGO' into text field 'id:firstName'.</msg>
+<arg>${INPUT_FIRSTNAME}</arg>
+<arg>THIAGO</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-15T18:37:21.405079" elapsed="0.075503"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-09-15T17:19:12.563705" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-09-15T18:37:23.481497" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-15T18:37:21.480784" elapsed="2.001271"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-15T18:37:23.483025" level="INFO">Typing text 'DUARTE' into text field 'id:lastName'.</msg>
+<arg>${INPUT_LASTNAME}</arg>
+<arg>DUARTE</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-15T18:37:23.482367" elapsed="0.098270"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-15T18:37:25.581260" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-15T18:37:23.580840" elapsed="2.000764"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-15T18:37:25.582209" level="INFO">Typing text 'TVLISBOA@EMAIL.COM' into text field 'id:userEmail'.</msg>
+<arg>${INPUT_USERMAIL}</arg>
+<arg>TVLISBOA@EMAIL.COM</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-15T18:37:25.581806" elapsed="0.062952"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-15T18:37:27.646153" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-15T18:37:25.645072" elapsed="2.001476"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-15T18:37:27.647274" level="INFO">Typing text '24988811590' into text field 'id:userNumber'.</msg>
+<arg>${INPUT_MOBILENUMBER}</arg>
+<arg>24988811590</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-15T18:37:27.646766" elapsed="0.048252"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-15T18:37:29.700999" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-15T18:37:27.695262" elapsed="2.006412"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-15T18:37:29.702791" level="INFO">Typing text '22/08/1993' into text field 'id:dateOfBirthInput'.</msg>
+<arg>${INPUT_BIRTHDAY}</arg>
+<arg>22/08/1993</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-15T18:37:29.702110" elapsed="0.170745"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-15T18:37:31.873884" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-15T18:37:29.873077" elapsed="2.001217"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-15T18:37:31.874963" level="INFO">Typing text 'Vacation ready.' into text field 'id:subjectsInput'.</msg>
+<arg>${INPUT_SUBJECTS}</arg>
+<arg>Vacation ready.</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-15T18:37:31.874522" elapsed="0.115506"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-15T18:37:33.990766" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-15T18:37:31.990225" elapsed="2.001308"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-15T18:37:33.992730" level="INFO">Typing text 'Avenida Getulio Vargas - 1500' into text field 'id:currentAddress'.</msg>
+<arg>${TEXTAREA_ADDRESS}</arg>
+<arg>Avenida Getulio Vargas - 1500</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-15T18:37:33.991954" elapsed="0.076010"/>
+</kw>
+<status status="PASS" start="2025-09-15T18:37:21.404615" elapsed="12.663582"/>
+</kw>
+<kw name="clicar em submit">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-15T18:37:34.069343" level="INFO">Clicking element 'id:submit'.</msg>
+<arg>${BUTTON_SUBMIT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-15T18:37:34.069013" elapsed="0.049208"/>
+</kw>
+<status status="PASS" start="2025-09-15T18:37:34.068593" elapsed="0.049794"/>
+</kw>
+<kw name="fechar o navegador">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-15T18:37:39.124232" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-09-15T17:19:07.563108" elapsed="5.001138"/>
+<status status="PASS" start="2025-09-15T18:37:34.119043" elapsed="5.006082"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-09-15T17:19:12.564726" elapsed="2.126952"/>
+<status status="PASS" start="2025-09-15T18:37:39.125525" elapsed="2.228253"/>
 </kw>
-<status status="PASS" start="2025-09-15T17:19:03.065448" elapsed="11.626915"/>
+<status status="PASS" start="2025-09-15T18:37:34.118665" elapsed="7.235479"/>
+</kw>
+<status status="PASS" start="2025-09-15T18:37:10.951270" elapsed="30.403275"/>
 </test>
-<status status="PASS" start="2025-09-15T17:19:02.836523" elapsed="11.860562"/>
+<status status="PASS" start="2025-09-15T18:37:10.656966" elapsed="30.701696"/>
 </suite>
-<status status="PASS" start="2025-09-15T17:19:02.831546" elapsed="11.868330"/>
+<status status="PASS" start="2025-09-15T18:37:10.653662" elapsed="30.707092"/>
 </suite>
-<status status="PASS" start="2025-09-15T17:19:02.827930" elapsed="11.877729"/>
+<status status="PASS" start="2025-09-15T18:37:10.650697" elapsed="30.726310"/>
 </suite>
-<status status="PASS" start="2025-09-15T17:19:02.800188" elapsed="11.908647"/>
+<status status="PASS" start="2025-09-15T18:37:10.615309" elapsed="30.772589"/>
 </suite>
 <statistics>
 <total>
@@ -42,7 +149,7 @@
 <stat name="IQS" id="s1" pass="1" fail="0" skip="0">IQS</stat>
 <stat name="Iqs" id="s1-s1" pass="1" fail="0" skip="0">IQS.Iqs</stat>
 <stat name="Tutorial Robot" id="s1-s1-s1" pass="1" fail="0" skip="0">IQS.Iqs.Tutorial Robot</stat>
-<stat name="Estrutura2" id="s1-s1-s1-s1" pass="1" fail="0" skip="0">IQS.Iqs.Tutorial Robot.Estrutura2</stat>
+<stat name="Forms2" id="s1-s1-s1-s1" pass="1" fail="0" skip="0">IQS.Iqs.Tutorial Robot.Forms2</stat>
 </suite>
 </statistics>
 <errors>
